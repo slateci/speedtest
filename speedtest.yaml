@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: speedtest
+spec:
+  containers:
+  - name: speedtest
+    image: slateci/speedtest:latest
+    env:
+    - name: REPORT_TO
+      value: "ivukotic@gmail.com"
+  restartPolicy: Never
